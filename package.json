@@ -1,0 +1,32 @@
+{
+  "name": "tracked",
+  "version": "1.0.0",
+  "description": "Dependency free declarative programming tool for safely tracking the state of properties and objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intelligible-tools/tracked.git"
+  },
+  "keywords": [
+    "declarative",
+    "tracked",
+    "trackable",
+    "object",
+    "programming",
+    "safe",
+    "safely",
+    "tracking",
+    "state",
+    "property",
+    "properties"
+  ],
+  "author": "Autumn Peacock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intelligible-tools/tracked/issues"
+  },
+  "homepage": "https://github.com/intelligible-tools/tracked#readme"
+}
