@@ -4,7 +4,8 @@
   "description": "Dependency free declarative programming tool for safely tracking the state of properties and objects",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config jest.config.ts",
+    "test:watch": "jest --watch --config jest.config.ts"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,18 @@
   "bugs": {
     "url": "https://github.com/intelligible-tools/tracked/issues"
   },
-  "homepage": "https://github.com/intelligible-tools/tracked#readme"
+  "homepage": "https://github.com/intelligible-tools/tracked#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "jest": "^29.7.0",
+    "node-notifier": "^10.0.1",
+    "prettier": "^3.1.0",
+    "prettier-eslint": "^16.4.1",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }

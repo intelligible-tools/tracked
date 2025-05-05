@@ -21,8 +21,8 @@ export class TrackedValue<T> implements Trackable<T> {
    * @param {T} value - The initial value to be tracked.
    */
   constructor(value: T) {
-    this._previousValue = value;
-    this._currentValue = value;
+    this._previousValue = value; //?
+    this._currentValue = value; //?
   }
 
   /// Value clenliness
@@ -61,7 +61,7 @@ export class TrackedValue<T> implements Trackable<T> {
    * @returns {T} - The current value of the field.
    */
   public get value(): T {
-    return this._currentValue;
+    return this._currentValue; //?
   }
 
   /// State Management
