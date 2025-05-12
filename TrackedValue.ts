@@ -1,3 +1,7 @@
+export class OBJECT_VALUE_ERROR extends Error {
+  public message = "TrackedValue does not support object values, use TrackedObject instead.";
+}
+
 import { TrackableDiff, Trackable, TrackableValueDiff } from "./types";
 
 /**
@@ -51,6 +55,10 @@ export class TrackedValue<T> implements Trackable<T> {
    * @param {T} value - The new value to set.
    */
   public set value(value: T) {
+    if (typeof value === "object" && value !== null) {
+      throw new OBJECT_VALUE_ERROR();
+    }
+
     this._previousValue = this._currentValue;
     this._currentValue = value;
   }
